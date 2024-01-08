@@ -3,34 +3,26 @@
 
 <head>
   <title>Todo App</title>
-  <link
-    href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
-    rel="stylesheet" 
-    type="text/css">
-  <link 
-    rel="stylesheet" 
-    href="style.css" 
-    type="text/css" 
-    media="screen" 
-    charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
 </head>
 
 <body>
   <header class="header">
-    <img src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix">
+    <img class="header__image" src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix">
     <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
   <main class="main">
-    <section>
-      <h1 class="list-header">Add Item</h1>
+    <section class="section">
+      <h1 class="section__list-header">Add Item</h1>
       <div class="task-row">
         <input id="new-task" class="task" type="text">
         <button>Add</button>
       </div>
     </section>
-    <section>
-      <h2 class="list-header">Todo</h2>
-      <ul id="incomplete-tasks">
+    <section class="section">
+      <h2 class="section__list-header">Todo</h2>
+      <ul class="section__list" id="incomplete-tasks">
         <li>
           <input type="checkbox">
           <label class="task">Pay Bills</label>
@@ -47,9 +39,9 @@
         </li>
       </ul>
     </section>
-    <section>
-      <h2 class="list-header">Completed</h2>
-      <ul id="completed-tasks">
+    <section class="section">
+      <h2 class="section__list-header">Completed</h2>
+      <ul class="section__list" id="completed-tasks">
         <li>
           <input type="checkbox" checked>
           <label class="task">See the Doctor</label>
